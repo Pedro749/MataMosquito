@@ -12,10 +12,10 @@
      criaMosquitoTempo = 1000
  }else if(nivel === 'Dificil'){
      //1000
-     criaMosquitoTempo = 800
+     criaMosquitoTempo = 850
  }else if(nivel === 'Brabo'){
      //750
-     criaMosquitoTempo = 550
+     criaMosquitoTempo = 650
  }
 
 function ajustaTamanhoPalcojogo(){
