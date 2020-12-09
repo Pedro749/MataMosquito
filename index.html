@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mata Mosquito</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        div.item1, div.item2, div.item3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+       
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.2em;
+            background-color: rgb(7, 209, 34);
+            cursor: pointer;
+            color: #fff;
+            
+        }
+        div.conteudo {
+            width: 60%;
+            margin:auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            img {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <script>
+        function iniciarJogo(){
+            var nivel = document.getElementById('nivel').value
+
+            if(nivel === ''){
+                alert('Selecione um nível para iniciar o jogo')
+                return false
+            }
+            window.location.href='jogo.html?' + nivel
+        }
+    </script>
+</head>
+<body>
+   <div class="conteudo">
+        <div class="item1">
+                <img src="imagens/game.png"  >
+        </div>
+        <div class="item3">
+            <select name="" id="nivel">
+                <option value="">--Selecionar o nível--</option>
+                <option value="Normal">Normal</option>
+                <option value="Dificil">Dificil</option>
+                <option value="Brabo">Brabo</option>
+            </select>
+        </div>
+         <div class="item2">
+              <button onclick="iniciarJogo()">Iniciar jogo</button>
+        </div>
+    </div>
+     
+</body>
+</html>

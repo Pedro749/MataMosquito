@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fim de jogo</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <style>
+        div.item1, div.item2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.2em;
+            background-color: rgb(214, 87, 14);
+            cursor: pointer;
+            color: #fff;
+            
+        }
+        div.conteudo {
+            width: 60%;
+            margin:auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="conteudo">
+        <div class="item1">
+                <img src="imagens/game_over.png"  >
+        </div>
+         <div class="item2">
+              <button onclick="window.location.href='index.html'">Reiniciar</button>
+        </div>
+    </div>
+     
+</body>
+</html>
