@@ -10,7 +10,7 @@
  if(nivel === 'Normal'){
      //1500
      criaMosquitoTempo = 1000
- }else if(nivel === 'Difícil'){
+ }else if(nivel === 'Dificil'){
      //1000
      criaMosquitoTempo = 800
  }else if(nivel === 'Brabo'){
